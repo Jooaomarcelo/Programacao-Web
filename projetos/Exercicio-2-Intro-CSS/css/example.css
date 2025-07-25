@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+body {
+    background-color: rgba(0, 179, 255, 0.075);
+}
+
+header {    
+    padding: 15px;
+    background-color: grey;
+    margin-bottom: 50px;
+}
+
+.search_container {
+    display: flex;
+    width: 80%;
+    margin: 10px auto 15px;
+    border: 1px solid black;
+}
+
+select {
+    display: flex;
+    flex: 0 1;
+    height: 50px;
+    border: none;
+    width: 150px;
+    background-color: rgba(0, 179, 255);
+    color: black;
+}
+
+form {
+    display: flex;
+    width: 100vw;
+
+}
+
+form input {
+        flex: 1;
+        border: none;
+        outline: none;
+        padding: 0 15px;
+        background-color: white;
+}
+
+form button {
+        margin-left: auto;
+        border: none;
+        height: 50px;
+        width: 50px;  
+        background-color: rgba(0, 179, 255);
+    }
+
+.card_container {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card_item {
+    background-color: white;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 3px 0 5px lightgrey;
+    width: 30%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 0 300px; /* grow-sobrou / shrink- */
+    
+    img {
+        padding: 10px;
+        max-width: 100%;
+        aspect-ratio: 16/10;
+        object-fit: contain;
+    }
+
+    p {
+        text-align: center;
+    }
+    
+    button {
+        width: 80%;
+        height: 10%;
+        align-self: center;
+        margin-top: auto;
+        margin-bottom: 10px;
+
+        border: none;
+        border-radius: 5px;
+        background-color: rgba(0, 179, 255, 0.075);
+        font-weight: 600;
+    }
+
+    button:hover {
+        background-color: rgba(0, 179, 255, 0.5);
+        transform: scale(1.15);
+        transition: transform 0.5s;
+    }
+}
